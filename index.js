@@ -8,8 +8,3 @@ globals.forEach(function(g) {
 
 
 module.exports = require("./later");
-
-globals.forEach(function(g) {
-  if (g in globalValues) global[g] = globalValues[g];
-  else delete global[g];
-});
